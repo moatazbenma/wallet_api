@@ -96,6 +96,14 @@ DATABASES = {
 }
 
 
+
+
+SWAGGER_SETTINGS = {
+    "USE_SESSION_AUTH": False,   # disable Django login in Swagger
+    "LOGIN_URL": "admin:login",  # optional, fallback if someone clicks login
+}
+
+
 # Password validation
 # https://docs.djangoproject.com/en/5.2/ref/settings/#auth-password-validators
 
