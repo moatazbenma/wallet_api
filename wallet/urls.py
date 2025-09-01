@@ -15,7 +15,7 @@ schema_view = get_schema_view(
         description="API documentation for Wallet Project",
     ),
     public=True,
-    permission_classes=(permissions.AllowAny,),
+    permission_classes=[permissions.AllowAny],  # ✅ Make sure it's a list, not tuple
 )
 
 
