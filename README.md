@@ -90,5 +90,4 @@ cd wallet-api
 
 ## 📖 API Documentation (Swagger)
 
-    http://127.0.0.1:8000/swagger/
-
+    https://wallet-api-jqfc.onrender.com/swagger/
