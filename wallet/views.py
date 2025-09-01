@@ -6,7 +6,16 @@ from .models import User, Transaction
 from .serializers import UserSerializer, TransactionSerializer, WalletUpdateSerializer
 from drf_yasg.utils import swagger_auto_schema
 from decimal import Decimal
+from django.http import JsonResponse
 
+
+
+def home(request):
+    return JsonResponse({
+        "message": "Welcome to Wallet API 🚀",
+        "endpoints": ["/users/", "/wallet/update/", "/transactions/<user_id>/"],
+        "docs": "/swagger/"
+    })
 
 
 @api_view(["GET"])
