@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: wallet-api
+    env: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: gunicorn wallet_api.wsgi
+    envVars:
+      - key: DJANGO_SETTINGS_MODULE
+        value: wallet_api.settings
